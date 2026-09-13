@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<title>Отзывы — РемСтиль</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Cormorant+Garamond:wght@300;400;500;600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- HEADER -->
+<header>
+  <div class="header-inner">
+    <a href="/" class="logo" id="site-logo">
+      <span class="logo-text">Рем<em>Стиль</em></span>
+    </a>
+    <nav>
+      <a href="services.html">Услуги</a>
+      <a href="promotions.html">Акции</a>
+      <a href="design.html">Дизайн</a>
+      <a href="smeta.html">Смета</a>
+      <a href="app101.html">101</a>
+      <a href="portfolio.html">Работы</a>
+      <a href="apartments.html">Квартиры</a>
+      <a href="reviews.html">Отзывы</a>
+      <a href="about.html">О нас</a>
+      <a href="contacts.html">Контакты</a>
+    </nav>
+    <div class="header-cta">
+      <a href="tel:+79114690308" class="header-phone">+7 (911) 469-03-08</a>
+      <div class="header-msg-group">
+        <a href="https://max.ru/u/f9LHodD0cOIwo2M00vkMfzaQwhqzdDRSYrMuNYeVL43EmGE3RPhaWhf13iQ" target="_blank" class="header-messenger" title="MAX">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="6" fill="#0077FF"/><path d="M6.5 16.5V8.2L11 13.6L15.5 8.2V16.5" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M17.5 8.2V16.5" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </a>
+        <a href="https://t.me/RemStyle39" target="_blank" class="header-messenger" title="Telegram">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M22 2L11 13" stroke="#2aabee" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 2L15 22L11 13L2 9L22 2Z" stroke="#2aabee" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+      <a href="contacts.html" class="btn-header">Бесплатный замер</a>
+      <button class="burger" id="burger-btn" onclick="toggleMobileMenu()" aria-label="Меню"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobile-menu">
+  <a href="tel:+79114690308" class="mobile-phone">+7 (911) 469-03-08</a>
+  <a href="services.html" onclick="closeMobileMenu()">Услуги</a>
+  <a href="promotions.html" onclick="closeMobileMenu()">Акции</a>
+  <a href="design.html" onclick="closeMobileMenu()">Дизайн</a>
+  <a href="smeta.html" onclick="closeMobileMenu()">Рассчитать стоимость</a>
+  <a href="app101.html" onclick="closeMobileMenu()">101</a>
+  <a href="portfolio.html" onclick="closeMobileMenu()">Работы</a>
+  <a href="apartments.html" onclick="closeMobileMenu()">Квартиры в управлении</a>
+  <a href="reviews.html" onclick="closeMobileMenu()">Отзывы</a>
+  <a href="about.html" onclick="closeMobileMenu()">О компании</a>
+  <a href="contacts.html" onclick="closeMobileMenu()">Контакты</a>
+  <div style="margin-top:24px;padding-top:20px;border-top:1px solid var(--border,rgba(255,255,255,0.08));">
+    <div style="font-size:12px;color:var(--w30,rgba(255,255,255,0.3));letter-spacing:0.08em;text-transform:uppercase;margin-bottom:14px;">Написать нам</div>
+    <div style="display:flex;gap:12px;">
+      <a href="https://max.ru/u/f9LHodD0cOIwo2M00vkMfzaQwhqzdDRSYrMuNYeVL43EmGE3RPhaWhf13iQ" target="_blank" style="flex:1;display:flex;align-items:center;justify-content:center;gap:10px;padding:14px;background:rgba(0,119,255,0.1);border:1px solid rgba(0,119,255,0.25);border-radius:12px;text-decoration:none;color:#fff;font-size:15px;font-weight:500;">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="6" fill="#0077FF"/><path d="M6.5 16.5V8.2L11 13.6L15.5 8.2V16.5" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M17.5 8.2V16.5" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/></svg>
+        MAX
+      </a>
+      <a href="https://t.me/RemStyle39" target="_blank" style="flex:1;display:flex;align-items:center;justify-content:center;gap:10px;padding:14px;background:rgba(42,171,238,0.1);border:1px solid rgba(42,171,238,0.25);border-radius:12px;text-decoration:none;color:#fff;font-size:15px;font-weight:500;">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#2aabee"/><path d="M8 12l2.5 2.5L16 9" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Telegram
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ADMIN BTN -->
+<!-- FLOAT CALL -->
+<button id="float-call-btn" onclick="openCallback()" aria-label="Заказать звонок">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" fill="white"/>
+  </svg>
+</button>
+<div id="float-call-label">Перезвоним за 28 сек</div>
+
+<!-- CALLBACK WIDGET -->
+<div id="callback-overlay">
+  <div id="callback-box">
+    <button id="callback-close" onclick="closeCallback()">✕</button>
+
+    <div id="cb-step-form">
+      <div class="cb-phone-icon">📞</div>
+      <h3>Перезвоним за 28 секунд</h3>
+      <p class="cb-sub">Введите номер — менеджер Мария свяжется с вами прямо сейчас</p>
+      <div class="cb-timer-row">
+        <span class="cb-timer-badge">28</span>
+        <span class="cb-timer-label">секунд до звонка</span>
+      </div>
+      <input type="tel" id="cb-phone-input" placeholder="+7 (___) ___-__-__" maxlength="18">
+      <button id="cb-submit-btn" onclick="submitCallback()">Жду звонка через 28 сек 📞</button>
+      <div class="consent-row" style="justify-content:center;margin-top:8px;">
+        <input type="checkbox" id="cb-consent" checked>
+        <label for="cb-consent" style="font-size:12px;">Соглашаюсь на <a href="/privacy.html" target="_blank" style="color:var(--w50);">обработку персональных данных</a></label>
+      </div>
+      <p class="cb-guarantee">Работаем Пн–Сб 9:00–20:00 · Звонок бесплатный</p>
+    </div>
+
+    <div id="cb-step-timer">
+      <div class="cb-phone-icon" style="animation:callring 1.8s ease-out infinite;background:rgba(16,185,129,0.2);">📞</div>
+      <h3>Соединяем...</h3>
+      <div class="cb-countdown" id="cb-countdown">28</div>
+      <div class="cb-countdown-label">секунд до звонка от Марии</div>
+      <div class="cb-progress-bar"><div class="cb-progress-fill" id="cb-progress" style="width:100%"></div></div>
+      <p class="cb-sub">Не кладите трубку — звонок уже идёт</p>
+    </div>
+
+    <div id="cb-step-success">
+      <div style="font-size:52px;margin-bottom:14px;">✅</div>
+      <h3>Спасибо!</h3>
+      <p class="cb-sub" style="margin-bottom:20px;">Заявка на звонок принята.<br>Мария свяжется с вами в ближайшее время.</p>
+      <a href="tel:+79114690308" style="color:var(--blue2);font-size:15px;text-decoration:none;display:block;margin-bottom:20px;">+7 (911) 469-03-08</a>
+      <button onclick="closeCallback()" style="background:var(--bg3);border:1px solid var(--border);color:var(--w50);padding:9px 24px;border-radius:8px;cursor:pointer;font-family:var(--sans);font-size:13px;">Закрыть</button>
+    </div>
+  </div>
+</div>
+
+<button id="scroll-top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Наверх">↑</button>
+<div id="toast"></div>
+<section id="reviews" class="parallax-section">
+  <div class="section-bg" data-himg="IMG2" style="background-image:url('')"></div>
+  <div class="section-bg-overlay" style="background:rgba(5,5,10,0.88);"></div>
+  <div class="container">
+    <div class="section-eyebrow">Отзывы</div>
+    <div class="section-title">Что говорят <em>клиенты</em></div>
+    <div class="section-sub">Более 120 довольных клиентов по всей Калининградской области</div>
+    <div class="reviews-grid" id="site-reviews"></div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <a href="/" class="logo"><span class="logo-text">Рем<em>Стиль</em></span></a>
+    <div class="footer-socials">
+      <a href="https://max.ru/u/f9LHodD0cOIwo2M00vkMfzaQwhqzdDRSYrMuNYeVL43EmGE3RPhaWhf13iQ" target="_blank" class="social-btn social-max">MAX</a>
+      <a href="https://t.me/RemStyle39" target="_blank" class="social-btn social-tg">Telegram</a>
+    </div>
+    <span class="footer-copy">© 2026 РемСтиль. Все права защищены.</span>
+  </div>
+</footer>
+
+<!-- SUCCESS POPUP -->
+<div id="success-overlay" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.8);z-index:9001;align-items:center;justify-content:center;backdrop-filter:blur(6px);">
+  <div style="background:var(--bg2);border:1px solid var(--border);border-radius:20px;padding:40px;max-width:400px;width:90%;position:relative;text-align:center;box-shadow:0 30px 80px rgba(0,0,0,0.6);">
+    <div style="position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,#10b981,#6ee7b7,#10b981,transparent);"></div>
+    <div style="font-size:52px;margin-bottom:14px;">✅</div>
+    <div style="font-family:var(--serif);font-size:26px;color:var(--white);margin-bottom:10px;">Заявка принята!</div>
+    <div style="font-size:14px;color:var(--w50);line-height:1.7;margin-bottom:22px;">Наш менеджер <strong style="color:var(--white)">Мария</strong> свяжется с вами<br>в течение 15 минут.</div>
+    <a href="tel:+79114690308" style="color:var(--blue2);font-size:15px;text-decoration:none;display:block;margin-bottom:20px;">+7 (911) 469-03-08</a>
+    <button onclick="document.getElementById('success-overlay').style.display='none'" style="background:var(--bg3);border:1px solid var(--border);color:var(--w50);padding:9px 24px;border-radius:8px;cursor:pointer;font-family:var(--sans);font-size:13px;">Закрыть</button>
+  </div>
+</div>
+
+<!-- POPUP -->
+<div id="popup-overlay">
+  <div id="popup-box">
+    <button id="popup-close" onclick="closePopup()">✕</button>
+    <div class="popup-gift">✦</div>
+    <h3 id="popup-title">Подождите! У нас подарок</h3>
+    <p id="popup-desc">Оставьте номер телефона прямо сейчас и получите <strong style="color:var(--gold)">скидку 15%</strong> на первый заказ + бесплатную уборку после ремонта!</p>
+    <input type="tel" id="popup-phone" placeholder="+7 (___) ___-__-__">
+    <button id="popup-submit" onclick="submitPopup()">Получить скидку 15%</button>
+    <div class="consent-row" style="justify-content:center;">
+      <input type="checkbox" id="popup-consent" checked>
+      <label for="popup-consent" style="font-size:12px;">Соглашаюсь на <a href="/privacy.html" target="_blank">обработку персональных данных</a></label>
+    </div>
+    <div class="popup-note">Менеджер Мария перезвонит в течение 15 минут</div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
