@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<title>РемСтиль — Ремонт квартир в Калининграде и Калининградской области</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- HEADER -->
+<header>
+  <div class="header-inner">
+    <a href="/" class="logo" id="site-logo">
+      <span class="logo-text">Рем<em>Стиль</em></span>
+    </a>
+    <nav>
+      <a href="services.html">Услуги</a>
+      <a href="promotions.html">Акции</a>
+      <a href="design.html">Дизайн</a>
+      <a href="smeta.html">Смета</a>
+      <a href="app101.html">101</a>
+      <a href="portfolio.html">Работы</a>
+      <a href="apartments.html">Квартиры</a>
+      <a href="reviews.html">Отзывы</a>
+      <a href="about.html">О нас</a>
+      <a href="contacts.html">Контакты</a>
+    </nav>
+    <div class="header-cta">
+      <a href="tel:+79114690308" class="header-phone">+7 (911) 469-03-08</a>
+      <div class="header-msg-group">
+        <a href="https://max.ru/u/f9LHodD0cOIwo2M00vkMfzaQwhqzdDRSYrMuNYeVL43EmGE3RPhaWhf13iQ" target="_blank" class="header-messenger" title="MAX">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="6" fill="#0077FF"/><path d="M6.5 16.5V8.2L11 13.6L15.5 8.2V16.5" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M17.5 8.2V16.5" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </a>
+        <a href="https://t.me/RemStyle39" target="_blank" class="header-messenger" title="Telegram">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M22 2L11 13" stroke="#2aabee" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 2L15 22L11 13L2 9L22 2Z" stroke="#2aabee" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+      <a href="contacts.html" class="btn-header">Бесплатный замер</a>
+      <button class="burger" id="burger-btn" onclick="toggleMobileMenu()" aria-label="Меню"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobile-menu">
+  <a href="tel:+79114690308" class="mobile-phone">+7 (911) 469-03-08</a>
+  <a href="services.html" onclick="closeMobileMenu()">Услуги</a>
+  <a href="promotions.html" onclick="closeMobileMenu()">Акции</a>
+  <a href="design.html" onclick="closeMobileMenu()">Дизайн</a>
+  <a href="smeta.html" onclick="closeMobileMenu()">Рассчитать стоимость</a>
+  <a href="app101.html" onclick="closeMobileMenu()">101</a>
+  <a href="portfolio.html" onclick="closeMobileMenu()">Работы</a>
+  <a href="apartments.html" onclick="closeMobileMenu()">Квартиры в управлении</a>
+  <a href="reviews.html" onclick="closeMobileMenu()">Отзывы</a>
+  <a href="about.html" onclick="closeMobileMenu()">О компании</a>
+  <a href="contacts.html" onclick="closeMobileMenu()">Контакты</a>
+  <div style="margin-top:24px;padding-top:20px;border-top:1px solid var(--border,rgba(255,255,255,0.08));">
+    <div style="font-size:12px;color:var(--w30,rgba(255,255,255,0.3));letter-spacing:0.08em;text-transform:uppercase;margin-bottom:14px;">Написать нам</div>
+    <div style="display:flex;gap:12px;">
+      <a href="https://max.ru/u/f9LHodD0cOIwo2M00vkMfzaQwhqzdDRSYrMuNYeVL43EmGE3RPhaWhf13iQ" target="_blank" style="flex:1;display:flex;align-items:center;justify-content:center;gap:10px;padding:14px;background:rgba(0,119,255,0.1);border:1px solid rgba(0,119,255,0.25);border-radius:12px;text-decoration:none;color:#fff;font-size:15px;font-weight:500;">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="6" fill="#0077FF"/><path d="M6.5 16.5V8.2L11 13.6L15.5 8.2V16.5" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M17.5 8.2V16.5" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/></svg>
+        MAX
+      </a>
+      <a href="https://t.me/RemStyle39" target="_blank" style="flex:1;display:flex;align-items:center;justify-content:center;gap:10px;padding:14px;background:rgba(42,171,238,0.1);border:1px solid rgba(42,171,238,0.25);border-radius:12px;text-decoration:none;color:#fff;font-size:15px;font-weight:500;">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" fill="#2aabee"/><path d="M8 12l2.5 2.5L16 9" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Telegram
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ADMIN BTN -->
+<!-- FLOAT CALL -->
+<button id="float-call-btn" onclick="openCallback()" aria-label="Заказать звонок">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" fill="white"/>
+  </svg>
+</button>
+<div id="float-call-label">Перезвоним за 28 сек</div>
+
+<!-- CALLBACK WIDGET -->
+<div id="callback-overlay">
+  <div id="callback-box">
+    <button id="callback-close" onclick="closeCallback()">✕</button>
+
+    <div id="cb-step-form">
+      <div class="cb-phone-icon">📞</div>
+      <h3>Перезвоним за 28 секунд</h3>
+      <p class="cb-sub">Введите номер — менеджер Мария свяжется с вами прямо сейчас</p>
+      <div class="cb-timer-row">
+        <span class="cb-timer-badge">28</span>
+        <span class="cb-timer-label">секунд до звонка</span>
+      </div>
+      <input type="tel" id="cb-phone-input" placeholder="+7 (___) ___-__-__" maxlength="18">
+      <button id="cb-submit-btn" onclick="submitCallback()">Жду звонка через 28 сек 📞</button>
+      <div class="consent-row" style="justify-content:center;margin-top:8px;">
+        <input type="checkbox" id="cb-consent" checked>
+        <label for="cb-consent" style="font-size:12px;">Соглашаюсь на <a href="/privacy.html" target="_blank" style="color:var(--w50);">обработку персональных данных</a></label>
+      </div>
+      <p class="cb-guarantee">Работаем Пн–Сб 9:00–20:00 · Звонок бесплатный</p>
+    </div>
+
+    <div id="cb-step-timer">
+      <div class="cb-phone-icon" style="animation:callring 1.8s ease-out infinite;background:rgba(16,185,129,0.2);">📞</div>
+      <h3>Соединяем...</h3>
+      <div class="cb-countdown" id="cb-countdown">28</div>
+      <div class="cb-countdown-label">секунд до звонка от Марии</div>
+      <div class="cb-progress-bar"><div class="cb-progress-fill" id="cb-progress" style="width:100%"></div></div>
+      <p class="cb-sub">Не кладите трубку — звонок уже идёт</p>
+    </div>
+
+    <div id="cb-step-success">
+      <div style="font-size:52px;margin-bottom:14px;">✅</div>
+      <h3>Спасибо!</h3>
+      <p class="cb-sub" style="margin-bottom:20px;">Заявка на звонок принята.<br>Мария свяжется с вами в ближайшее время.</p>
+      <a href="tel:+79114690308" style="color:var(--blue2);font-size:15px;text-decoration:none;display:block;margin-bottom:20px;">+7 (911) 469-03-08</a>
+      <button onclick="closeCallback()" style="background:var(--bg3);border:1px solid var(--border);color:var(--w50);padding:9px 24px;border-radius:8px;cursor:pointer;font-family:var(--sans);font-size:13px;">Закрыть</button>
+    </div>
+  </div>
+</div>
+
+<button id="scroll-top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Наверх">↑</button>
+<div id="toast"></div>
+<button id="admin-btn" onclick="openAdmin()">⚙ Управление</button>
+<div id="admin-modal">
+  <div id="admin-panel">
+    <div id="admin-header">
+      <h2>Панель управления — РемСтиль</h2>
+      <button id="admin-close" onclick="closeAdmin()">✕</button>
+    </div>
+    <div id="admin-body">
+      <div id="admin-sidebar">
+        <button class="admin-tab active" onclick="showTab('texts',this)">Тексты и цены</button>
+        <button class="admin-tab" onclick="showTab('portfolio',this)">Портфолио</button>
+        <button class="admin-tab" onclick="showTab('leads',this)">Заявки</button>
+        <button class="admin-tab" onclick="showTab('reviews',this)">Отзывы</button>
+        <button class="admin-tab" onclick="showTab('seo',this)">📈 Продвижение</button>
+      </div>
+      <div id="admin-content">
+        <div class="admin-section active" id="tab-texts">
+          <h3>Тексты и цены</h3>
+          <div class="admin-accordion"><div class="admin-acc-head" onclick="toggleAcc(this)">Заголовок и герой <span>▾</span></div><div class="admin-acc-body"><div class="field-group"><label>Заголовок Hero</label><input id="hero-title" value="Ремонт квартир в Калининграде"></div><div class="field-group"><label>Подзаголовок</label><textarea id="hero-sub">С нами вы не переплачиваете дважды: делаем дизайнерский ремонт сразу правильно. Строгое соблюдение технологий при работе с дорогими материалами и сложными системами исключает переделки. Мастера с опытом от 5 лет — ваша гарантия качества.</textarea></div><div class="field-row"><div class="field-group"><label>Лет опыта</label><input id="stat-years" value="7" type="number"></div><div class="field-group"><label>Проектов</label><input id="stat-projects" value="120" type="number"></div></div><button class="save-btn" onclick="saveTexts()">Сохранить</button><span class="save-notice" id="texts-notice">✓ Сохранено</span></div></div>
+          <div class="admin-accordion"><div class="admin-acc-head" onclick="toggleAcc(this)">Смарт ремонт <span>▾</span></div><div class="admin-acc-body"><div class="field-row"><div class="field-group"><label>Название</label><input id="s1-name" value="Смарт ремонт"></div><div class="field-group"><label>Цена ₽/м²</label><input id="s1-price" value="25000" type="number"></div></div><div class="field-group"><label>Описание</label><textarea id="s1-desc">Оптимальное решение для тех, кто хочет качественный ремонт по разумной цене. Черновые материалы уже включены.</textarea></div><button class="save-btn" onclick="saveService(1)">Сохранить</button><span class="save-notice" id="s1-notice">✓ Сохранено</span></div></div>
+          <div class="admin-accordion"><div class="admin-acc-head" onclick="toggleAcc(this)">Стандартный ремонт <span>▾</span></div><div class="admin-acc-body"><div class="field-row"><div class="field-group"><label>Название</label><input id="s2-name" value="Стандартный ремонт"></div><div class="field-group"><label>Цена ₽/м²</label><input id="s2-price" value="20000" type="number"></div></div><div class="field-group"><label>Описание</label><textarea id="s2-desc">Полный цикл ремонтных работ от демонтажа до финишной отделки. Идеальный баланс цены и качества.</textarea></div><button class="save-btn" onclick="saveService(2)">Сохранить</button><span class="save-notice" id="s2-notice">✓ Сохранено</span></div></div>
+          <div class="admin-accordion"><div class="admin-acc-head" onclick="toggleAcc(this)">Дизайнерский ремонт <span>▾</span></div><div class="admin-acc-body"><div class="field-row"><div class="field-group"><label>Название</label><input id="s3-name" value="Дизайнерский ремонт"></div><div class="field-group"><label>Цена ₽/м²</label><input id="s3-price" value="33800" type="number"></div></div><div class="field-group"><label>Описание</label><textarea id="s3-desc">Премиальный ремонт с индивидуальным дизайн-проектом. 3D-визуализация каждого помещения.</textarea></div><button class="save-btn" onclick="saveService(3)">Сохранить</button><span class="save-notice" id="s3-notice">✓ Сохранено</span></div></div>
+          <div class="admin-accordion"><div class="admin-acc-head" onclick="toggleAcc(this)">Контакты <span>▾</span></div><div class="admin-acc-body"><div class="field-group"><label>Телефон</label><input id="c-phone" value="+7 (911) 469-03-08"></div><div class="field-group"><label>Email</label><input id="c-email" value="remkld39@gmail.com"></div><div class="field-group"><label>Режим работы</label><input id="c-hours" value="Пн-Сб: 9:00 — 20:00"></div><button class="save-btn" onclick="saveContacts()">Сохранить</button><span class="save-notice" id="contacts-notice">✓ Сохранено</span></div></div>
+        </div>
+        <div class="admin-section" id="tab-portfolio"><h3>Портфолио</h3><button class="add-btn" onclick="addPortfolioItem()">+ Добавить проект</button><div class="portfolio-grid-admin" id="admin-portfolio-list"></div></div>
+        <div class="admin-section" id="tab-leads"><h3>Заявки с сайта</h3><div class="card-list" id="leads-list"><div style="color:var(--w30);font-size:13px;padding:20px 0;">Заявки появятся здесь после заполнения формы.</div></div></div>
+        <div class="admin-section" id="tab-reviews"><h3>Отзывы</h3><button class="add-btn" onclick="addReview()">+ Добавить отзыв</button><div class="card-list" id="admin-reviews-list"></div></div>
+        <div class="admin-section" id="tab-seo">
+          <h3>📈 Продвижение сайта</h3>
+
+          <!-- SEO META -->
+          <div class="admin-accordion">
+            <div class="admin-acc-head" onclick="toggleAcc(this)">🔍 SEO — мета-теги и описание <span>▾</span></div>
+            <div class="admin-acc-body open">
+              <div class="field-group"><label>Title страницы</label><input id="seo-title" value="РемСтиль — Ремонт квартир под ключ в Калининграде"></div>
+              <div class="field-group"><label>Meta Description (до 160 символов)</label><textarea id="seo-desc">Ремонт квартир в Калининграде от 20 000 ₽/м². Гарантия 2 года, работаем по договору, сдаём в срок. Бесплатный замер!</textarea></div>
+              <div class="field-group"><label>Ключевые слова (через запятую)</label><input id="seo-keys" value="ремонт квартир Калининград, ремонт под ключ, отделка квартир, дизайн проект Калининград"></div>
+              <div style="display:flex;align-items:center;gap:12px;margin-top:4px;">
+                <button class="save-btn" onclick="saveSeoMeta()">Применить</button>
+                <span class="save-notice" id="seo-meta-notice">✓ Применено</span>
+              </div>
+              <div style="margin-top:16px;padding:14px;background:var(--bg);border-radius:8px;border:1px solid var(--border);">
+                <div style="font-size:12px;color:var(--w30);margin-bottom:8px;letter-spacing:0.05em;text-transform:uppercase;">Превью в Google</div>
+                <div style="color:#8ab4f8;font-size:16px;margin-bottom:2px;" id="seo-preview-title">РемСтиль — Ремонт квартир под ключ в Калининграде</div>
+                <div style="color:#34a853;font-size:13px;margin-bottom:4px;">remstyle39.ru</div>
+                <div style="color:var(--w50);font-size:13px;" id="seo-preview-desc">Ремонт квартир в Калининграде от 20 000 ₽/м². Гарантия 2 года, работаем по договору, сдаём в срок. Бесплатный замер!</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Яндекс / Google -->
+          <div class="admin-accordion">
+            <div class="admin-acc-head" onclick="toggleAcc(this)">📊 Яндекс.Метрика и Google Analytics <span>▾</span></div>
+            <div class="admin-acc-body">
+              <div class="field-group"><label>Яндекс.Метрика — ID счётчика</label><input id="ya-id" placeholder="Например: 98765432" value="110510174"></div>
+              <div class="field-group"><label>Google Analytics — ID (G-XXXXXXXXXX)</label><input id="ga-id" placeholder="Например: G-ABC1234567"></div>
+              <div style="display:flex;align-items:center;gap:12px;">
+                <button class="save-btn" onclick="saveAnalytics()">Сохранить</button>
+                <span class="save-notice" id="analytics-notice">✓ Сохранено</span>
+              </div>
+              <div style="margin-top:14px;padding:12px 14px;background:var(--bg);border-radius:8px;border:1px solid var(--border);">
+                <div style="font-size:13px;color:var(--w50);line-height:1.7;">
+                  📌 Получить ID Метрики: <a href="https://metrika.yandex.ru" target="_blank" style="color:var(--blue)">metrika.yandex.ru</a> → Добавить счётчик<br>
+                  📌 Получить ID Google: <a href="https://analytics.google.com" target="_blank" style="color:var(--blue)">analytics.google.com</a> → Администрирование → Потоки данных
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Яндекс Бизнес -->
+          <div class="admin-accordion">
+            <div class="admin-acc-head" onclick="toggleAcc(this)">🗺️ Яндекс Бизнес и 2ГИС <span>▾</span></div>
+            <div class="admin-acc-body">
+              <div style="display:flex;flex-direction:column;gap:10px;">
+                <a href="https://business.yandex.ru" target="_blank" class="seo-ext-btn">
+                  <span style="font-size:20px;">🟡</span>
+                  <div>
+                    <div style="font-weight:500;color:var(--white);font-size:14px;">Яндекс Бизнес</div>
+                    <div style="font-size:13px;color:var(--w30);">Бесплатное размещение на картах Яндекс + SEO в поиске</div>
+                  </div>
+                  <span style="color:var(--blue);font-size:13px;margin-left:auto;">Открыть →</span>
+                </a>
+                <a href="https://2gis.ru/sprav" target="_blank" class="seo-ext-btn">
+                  <span style="font-size:20px;">🟢</span>
+                  <div>
+                    <div style="font-weight:500;color:var(--white);font-size:14px;">2ГИС</div>
+                    <div style="font-size:13px;color:var(--w30);">Размещение в справочнике — сотни заявок из карт</div>
+                  </div>
+                  <span style="color:var(--blue);font-size:13px;margin-left:auto;">Открыть →</span>
+                </a>
+                <a href="https://maps.google.com/business" target="_blank" class="seo-ext-btn">
+                  <span style="font-size:20px;">🔵</span>
+                  <div>
+                    <div style="font-weight:500;color:var(--white);font-size:14px;">Google Business Profile</div>
+                    <div style="font-size:13px;color:var(--w30);">Профиль в Google Maps и поиске Google</div>
+                  </div>
+                  <span style="color:var(--blue);font-size:13px;margin-left:auto;">Открыть →</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Соцсети -->
+          <div class="admin-accordion">
+            <div class="admin-acc-head" onclick="toggleAcc(this)">📱 Соцсети и Open Graph <span>▾</span></div>
+            <div class="admin-acc-body">
+              <div class="field-group"><label>Ссылка ВКонтакте</label><input id="og-vk" placeholder="https://vk.com/remstyle39"></div>
+              <div class="field-group"><label>Ссылка Instagram/Reels</label><input id="og-inst" placeholder="https://instagram.com/remstyle39"></div>
+              <div class="field-group"><label>OG-заголовок (для ссылок в соцсетях)</label><input id="og-title" value="РемСтиль — Ремонт квартир в Калининграде"></div>
+              <div class="field-group"><label>OG-описание</label><textarea id="og-desc">Делаем ремонт квартир под ключ с гарантией 2 года. Смотрите наши работы и оставьте заявку на бесплатный замер.</textarea></div>
+              <div style="display:flex;align-items:center;gap:12px;">
+                <button class="save-btn" onclick="saveOG()">Применить</button>
+                <span class="save-notice" id="og-notice">✓ Применено</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Robots / Sitemap -->
+          <div class="admin-accordion">
+            <div class="admin-acc-head" onclick="toggleAcc(this)">🤖 Robots.txt и Sitemap <span>▾</span></div>
+            <div class="admin-acc-body">
+              <div style="font-size:13px;color:var(--w50);margin-bottom:14px;">Скопируйте файлы и загрузите в корневую папку вашего хостинга.</div>
+              <div class="field-group"><label>robots.txt</label><textarea id="robots-txt" style="min-height:100px;font-family:monospace;font-size:13px;">User-agent: *
+Allow: /
+
+Sitemap: https://remstyle39.ru/sitemap.xml</textarea></div>
+              <button class="save-btn" onclick="copyText('robots-txt','robots-notice')">Скопировать</button>
+              <span class="save-notice" id="robots-notice">✓ Скопировано</span>
+              <div class="field-group" style="margin-top:16px;"><label>sitemap.xml</label><textarea id="sitemap-xml" style="min-height:120px;font-family:monospace;font-size:13px;"><?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://remstyle39.ru/</loc><priority>1.0</priority></url>
+  <url><loc>https://remstyle39.ru/#services</loc><priority>0.8</priority></url>
+  <url><loc>https://remstyle39.ru/#portfolio</loc><priority>0.8</priority></url>
+  <url><loc>https://remstyle39.ru/#reviews</loc><priority>0.7</priority></url>
+  <url><loc>https://remstyle39.ru/#contact</loc><priority>0.9</priority></url>
+</urlset></textarea></div>
+              <button class="save-btn" onclick="copyText('sitemap-xml','sitemap-notice')">Скопировать</button>
+              <span class="save-notice" id="sitemap-notice">✓ Скопировано</span>
+            </div>
+          </div>
+
+          <!-- SEO чеклист -->
+          <div class="admin-accordion">
+            <div class="admin-acc-head" onclick="toggleAcc(this)">✅ Чеклист продвижения <span>▾</span></div>
+            <div class="admin-acc-body">
+              <div id="seo-checklist" style="display:flex;flex-direction:column;gap:8px;"></div>
+            </div>
+          </div>
+
+          <!-- Скорость -->
+          <div class="admin-accordion">
+            <div class="admin-acc-head" onclick="toggleAcc(this)">⚡ Проверить скорость и SEO <span>▾</span></div>
+            <div class="admin-acc-body">
+              <div style="display:flex;flex-direction:column;gap:10px;">
+                <a href="https://pagespeed.web.dev/analysis?url=https://remstyle39.ru" target="_blank" class="seo-ext-btn">
+                  <span style="font-size:20px;">⚡</span>
+                  <div><div style="font-weight:500;color:var(--white);font-size:14px;">Google PageSpeed Insights</div><div style="font-size:13px;color:var(--w30);">Проверка скорости загрузки и SEO-оценка</div></div>
+                  <span style="color:var(--blue);font-size:13px;margin-left:auto;">Проверить →</span>
+                </a>
+                <a href="https://webmaster.yandex.ru" target="_blank" class="seo-ext-btn">
+                  <span style="font-size:20px;">🔍</span>
+                  <div><div style="font-weight:500;color:var(--white);font-size:14px;">Яндекс.Вебмастер</div><div style="font-size:13px;color:var(--w30);">Добавить сайт в индекс Яндекса, следить за позициями</div></div>
+                  <span style="color:var(--blue);font-size:13px;margin-left:auto;">Открыть →</span>
+                </a>
+                <a href="https://search.google.com/search-console" target="_blank" class="seo-ext-btn">
+                  <span style="font-size:20px;">🔎</span>
+                  <div><div style="font-weight:500;color:var(--white);font-size:14px;">Google Search Console</div><div style="font-size:13px;color:var(--w30);">Позиции в Google, ошибки индексации, клики</div></div>
+                  <span style="color:var(--blue);font-size:13px;margin-left:auto;">Открыть →</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<section id="hero">
+  <!-- СЛАЙДЕР -->
+  <div class="hero-slides">
+    <div class="hero-slide active" data-himg="IMG1" style="background-image:url('')"></div>
+    <div class="hero-slide" data-himg="IMG2" style="background-image:url('')"></div>
+    <div class="hero-slide" data-himg="IMG3" style="background-image:url('')"></div>
+    <div class="hero-slide" data-himg="IMG4" style="background-image:url('')"></div>
+    <div class="hero-slide" data-himg="IMG5" style="background-image:url('')"></div>
+  </div>
+  <div class="hero-dots">
+    <button class="hero-dot active" onclick="goSlide(0)"></button>
+    <button class="hero-dot" onclick="goSlide(1)"></button>
+    <button class="hero-dot" onclick="goSlide(2)"></button>
+    <button class="hero-dot" onclick="goSlide(3)"></button>
+    <button class="hero-dot" onclick="goSlide(4)"></button>
+  </div>
+  <div class="hero-grid">
+    <div class="hero-left">
+      <div class="hero-live">
+        <div class="live-dot"></div>
+        <span>Сейчас ремонтируем <strong id="live-count">8</strong> квартир</span>
+      </div>
+      <h1 class="hero-h1" id="site-hero-title">Ремонт квартир<br><em>в Калининграде</em><br>и <span class="gold-word">области</span></h1>
+      <p class="hero-sub" id="site-hero-sub">С нами вы не переплачиваете дважды: делаем дизайнерский ремонт сразу правильно. <strong style="color:var(--blue2)">Строгое соблюдение технологий при работе с дорогими материалами и сложными системами исключает переделки</strong>. <strong style="color:var(--gold)">Мастера с опытом от 5 лет</strong> — ваша гарантия качества.</p>
+      <div class="hero-btns">
+        <a href="smeta.html" class="btn-primary">Рассчитать стоимость</a>
+        <a href="portfolio.html" class="btn-ghost">Смотреть работы</a>
+      </div>
+      <div class="hero-stats">
+        <div><div class="hero-stat-num"><span id="site-stat-years">7</span><em>+</em></div><div class="hero-stat-label">лет опыта</div></div>
+        <div><div class="hero-stat-num"><span id="site-stat-projects">120</span><em>+</em></div><div class="hero-stat-label">проектов</div></div>
+        <div><div class="hero-stat-num">98<em>%</em></div><div class="hero-stat-label">довольных клиентов</div></div>
+        <div><div class="hero-stat-num">2</div><div class="hero-stat-label">года гарантии</div></div>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="hero-card live-card promo-card-mobile" style="border-color:rgba(191,149,63,0.35);">
+        <div class="hero-card-label">Акция · до 30 сентября</div>
+        <div class="hero-card-val" style="font-size:18px;line-height:1.3;color:var(--gold);">Отдых на берегу моря</div>
+        <div class="hero-card-sub">Заключите договор и получите проживание в наших апартаментах + гарантию 2 года на все виды работ</div>
+        <div class="hero-card-icon">🌊</div>
+      </div>
+      <div class="hero-card">
+        <div class="hero-card-label">Прозрачность</div>
+        <div class="hero-card-val" style="font-size:18px;line-height:1.3;">Смета<br>в приложении 101</div>
+        <div class="hero-card-sub">Каждый этап работ видно онлайн</div>
+        <div class="hero-card-icon">📱</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker-wrap">
+  <div class="ticker-track">
+    <span class="ticker-item">KNAUF</span><span class="ticker-item">Ceresit</span><span class="ticker-item">Weber</span><span class="ticker-item">Litokol</span><span class="ticker-item">REHAU</span><span class="ticker-item">Schneider</span><span class="ticker-item">Grohe</span><span class="ticker-item">Kerama Marazzi</span><span class="ticker-item">Mapei</span><span class="ticker-item">KNAUF</span><span class="ticker-item">Ceresit</span><span class="ticker-item">Weber</span><span class="ticker-item">Litokol</span><span class="ticker-item">REHAU</span><span class="ticker-item">Schneider</span><span class="ticker-item">Grohe</span><span class="ticker-item">Kerama Marazzi</span><span class="ticker-item">Mapei</span>
+  </div>
+</div>
+
+<!-- АКЦИИ -->
+<div id="cta-banner" style="position:relative;overflow:hidden;">
+  <div data-himg="IMG1" style="position:absolute;inset:0;background-image:url('');background-size:cover;background-position:center;background-attachment:fixed;z-index:0;"></div>
+  <div style="position:absolute;inset:0;background:rgba(5,5,10,0.82);z-index:1;"></div>
+  <div style="position:relative;z-index:2;">
+  <div class="gold-line"></div>
+  <h2>Готовы начать ремонт?</h2>
+  <p>Оставьте заявку — мы приедем на бесплатный замер и рассчитаем стоимость за 24 часа</p>
+  <a href="contacts.html" class="btn-primary">Оставить заявку</a>
+</div>
+
+<!-- CONTACT -->
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <a href="/" class="logo"><span class="logo-text">Рем<em>Стиль</em></span></a>
+    <div class="footer-socials">
+      <a href="https://max.ru/u/f9LHodD0cOIwo2M00vkMfzaQwhqzdDRSYrMuNYeVL43EmGE3RPhaWhf13iQ" target="_blank" class="social-btn social-max">MAX</a>
+      <a href="https://t.me/RemStyle39" target="_blank" class="social-btn social-tg">Telegram</a>
+    </div>
+    <span class="footer-copy">© 2026 РемСтиль. Все права защищены.</span>
+  </div>
+</footer>
+
+<!-- SUCCESS POPUP -->
+<div id="success-overlay" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.8);z-index:9001;align-items:center;justify-content:center;backdrop-filter:blur(6px);">
+  <div style="background:var(--bg2);border:1px solid var(--border);border-radius:20px;padding:40px;max-width:400px;width:90%;position:relative;text-align:center;box-shadow:0 30px 80px rgba(0,0,0,0.6);">
+    <div style="position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,#10b981,#6ee7b7,#10b981,transparent);"></div>
+    <div style="font-size:52px;margin-bottom:14px;">✅</div>
+    <div style="font-family:var(--serif);font-size:26px;color:var(--white);margin-bottom:10px;">Заявка принята!</div>
+    <div style="font-size:14px;color:var(--w50);line-height:1.7;margin-bottom:22px;">Наш менеджер <strong style="color:var(--white)">Мария</strong> свяжется с вами<br>в течение 15 минут.</div>
+    <a href="tel:+79114690308" style="color:var(--blue2);font-size:15px;text-decoration:none;display:block;margin-bottom:20px;">+7 (911) 469-03-08</a>
+    <button onclick="document.getElementById('success-overlay').style.display='none'" style="background:var(--bg3);border:1px solid var(--border);color:var(--w50);padding:9px 24px;border-radius:8px;cursor:pointer;font-family:var(--sans);font-size:13px;">Закрыть</button>
+  </div>
+</div>
+
+<!-- POPUP -->
+<div id="popup-overlay">
+  <div id="popup-box">
+    <button id="popup-close" onclick="closePopup()">✕</button>
+    <div class="popup-gift">✦</div>
+    <h3 id="popup-title">Подождите! У нас подарок</h3>
+    <p id="popup-desc">Оставьте номер телефона прямо сейчас и получите <strong style="color:var(--gold)">скидку 15%</strong> на первый заказ + бесплатную уборку после ремонта!</p>
+    <input type="tel" id="popup-phone" placeholder="+7 (___) ___-__-__">
+    <button id="popup-submit" onclick="submitPopup()">Получить скидку 15%</button>
+    <div class="consent-row" style="justify-content:center;">
+      <input type="checkbox" id="popup-consent" checked>
+      <label for="popup-consent" style="font-size:12px;">Соглашаюсь на <a href="/privacy.html" target="_blank">обработку персональных данных</a></label>
+    </div>
+    <div class="popup-note">Менеджер Мария перезвонит в течение 15 минут</div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
